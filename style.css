@@ -1,0 +1,543 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 20px;
+    color: #111;
+    background-color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+svg {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indent {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+li {
+    list-style: none;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_container h2 {
+    color: rgb(5, 103, 157);
+    font-size: 24px;
+}
+
+.header_menu_ul{
+    display: flex;
+}
+
+.header_menu_li {
+    margin: 15px;
+}
+
+
+/* Инвестиции в недвижимость */
+
+.investments_container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.investments {
+    width: 600px;
+    margin-right: 100px;
+}
+
+.investments h1 {
+    font-size: 56px;
+    line-height: 115%;
+    padding: 0px 0px 0px 0px;
+}
+
+.investments_txt {
+    font-size: 18px;
+    line-height: 160%;
+    padding: 0px 0px 20px 0px;
+    color: #808080;
+}
+
+.investments button {
+    cursor: pointer;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 15px 0px rgba(1, 115, 153, 0.20000000298023);
+    position: relative;
+    background: linear-gradient(126.77deg, rgba(96, 187, 238, 1) 0%, rgba(10, 114, 173, 1) 100%);
+    border: 0px solid transparent;
+    padding: 25px 45px;
+    font-size: 16px;
+}
+
+.investments button:hover {
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.5);
+}
+
+.investments_home {
+    width: 600px;
+}
+
+.investments_home_img {
+    width: 500px;
+}
+
+.done {
+    display: flex;
+}
+
+.made {
+    width: 134px;
+    margin: 15px;
+}
+
+.made span {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.done_plus {
+    color: rgb(35, 135, 192);
+}
+
+.made_txt {
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+}
+
+.investments_inf {
+    background: linear-gradient(127.37deg, rgba(57, 159, 216, 1) 0%, rgba(7, 117, 180, 1) 30%, #003756 99%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    margin-left: 30px;
+}
+
+.work_industry {
+    width: 100px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.investments_inf_year {
+    display: flex;
+    margin-left: 20px;
+}
+
+.investments_inf_number {
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+.investments_inf_txt_year {
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.investments_inf_txt {
+    width: 350px;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+
+/* Наши услуги */
+
+.services {
+    width: 100%;
+    background-color: #F6F6F6;
+}
+
+.our_services {
+    display: flex;
+}
+
+.our_services h1 {
+    font-size: 44px;
+    margin-right: 350px;
+}
+
+.our_services p {
+    width: 560px;
+    font-size: 18px;
+    color: #808080;
+    line-height: 1.6;
+}
+
+.services_inf {
+    display: flex;
+}
+
+.col-4 {
+    width: calc(33.333% - 30px);
+    margin: 15px;
+}
+
+.services_inf_block img {
+    margin-bottom: 40px;
+}
+
+.services_inf_block b {
+    font-size: 28px;
+}
+
+.services_inf_block p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: rgb(128, 128, 128);
+    margin-top: 20px;
+}
+
+.line_container {
+    overflow: hidden;
+    width: 1440px;
+}
+
+.ticker {
+    font-size: 140px;
+    color: #f6f6f6;
+    animation: 40s line_txt infinite linear;
+    white-space: nowrap;
+    text-transform: uppercase;
+    transform: translateX(1440px);
+}
+
+@keyframes line_txt {
+    100% {
+        transform: translateX(-5500px);
+    }
+}
+
+
+/* Преимущества нашей компании */
+
+.our_advantages {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.our_advantages h1 {
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+.our_advantages p {
+    width: 700px;
+    font-size: 18px;
+    color: #808080;
+    line-height: 1.6;
+}
+
+.advantages_inf {
+    display: flex;
+}
+
+.col-3 {
+    width: calc(25% - 30px);
+    margin: 30px;
+}
+
+.icon_advantages_inf {
+    font-size: 40px;
+    color: #fff;
+    background-color: #2387C0;
+    padding: 20px;
+    border-radius: 100%;
+    border: 10px solid #BBDAEC;
+}
+
+.advantages_inf_block_txt_short {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.advantages_inf_block_txt_long {
+    font-size: 18px;
+    line-height: 1.4;
+    color: rgb(128, 128, 128);
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+
+/* Свяжитесь с нами и получите бесплатную консультацию */
+
+.employee_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.employee {
+    background: linear-gradient(224.08deg, rgba(71, 71, 71, 1) 0%, rgba(34, 34, 34, 1) 42%);
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 300px;
+    padding: 40px;
+}
+
+.employee_name {
+    font-size: 22px;
+    margin: 15px 0px;
+}
+
+.employee_inf {
+    width: 200px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(229, 229, 229, 1);
+}
+
+.connection {
+    margin-left: 17%;
+}
+
+.connection h1 {
+    font-size: 46px;
+    line-height: 1.1;
+    width: 600px;
+}
+
+.connection_txt {
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    line-height: 1.6;
+    width: 463px;
+    margin: 30px 0;
+}
+
+.connection_button {
+    cursor: pointer;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 15px 0px rgba(1, 115, 153, 0.20000000298023);
+    position: relative;
+    background: linear-gradient(126.77deg, rgba(96, 187, 238, 1) 0%, rgba(10, 114, 173, 1) 100%);
+    border: 0px solid transparent;
+    padding: 25px 45px;
+    font-size: 16px;
+}
+
+.connection button:hover {
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.5);
+}
+
+
+/* История нашей компании */
+
+.history_container {
+    display: flex;
+    align-items: center;
+}
+
+.history h1 {
+    font-size: 46px;
+    line-height: 1.1;
+    width: 400px;
+}
+
+.history_txt {
+    font-size: 18px;
+    line-height: 160%;
+    margin: 30px 0;
+    color: #808080;
+    width: 530px;
+}
+
+.history button {
+    cursor: pointer;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 15px 0px rgba(1, 115, 153, 0.20000000298023);
+    position: relative;
+    background: linear-gradient(126.77deg, rgba(96, 187, 238, 1) 0%, rgba(10, 114, 173, 1) 100%);
+    border: 0px solid transparent;
+    padding: 25px 45px;
+    font-size: 16px;
+}
+
+.history button:hover {
+    box-shadow: inset 0px 0px 30px rgba(0,0,0,0.5);
+}
+
+.history_photo {
+    margin-left: 70px;
+}
+
+
+
+/* Стань клиентом Инвест Строй и получай только выгодные предложения */
+
+.client_container {
+    background: linear-gradient(224.08deg, rgba(71, 71, 71, 1) 0%, rgba(34, 34, 34, 1) 42%);
+    padding: 60px 60px 100px;
+    width: 1064px;
+    display: flex;
+}
+
+.founder_container {
+    position: relative;
+}
+
+.mark {
+    height: 62px;
+    background-color: #fff;
+    width: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    z-index: 2;
+    filter: blur(0px) drop-shadow(0px 10px 15px rgba(35,135,192,0.15000000596046));
+    position: absolute;
+    top: 67%;
+    transform: translate(-50%, -50%);
+}
+
+.mark_img {
+    width: 22px;
+}
+
+.founder {
+    background-color: #fff;
+    text-align: center;
+    width: 263px;
+    padding: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 90%;
+}
+
+.founder_name {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.founder_inf {
+    color: rgba(147, 147, 147, 1);
+    width: 220px;
+    line-height: 160%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.client{
+    width: 457px;
+    margin-left: 200px;
+}
+
+.client h1 {
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.client_inf {
+    color: rgba(196, 196, 196, 1);
+    font-size: 18px;
+    line-height: 160%;
+    margin-top: 50px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222222;
+    margin-top: 140px;
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+}
+
+.footer_inf {
+
+}
+
+.footer_inf h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer_inf p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    width: 517px;
+    line-height: 1.6;
+    margin: 30px 0;
+}
+
+.contacts {
+    margin-left: 150px;
+    text-align: center;
+}
+
+.brand {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.сopyright {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 20px;
+}
